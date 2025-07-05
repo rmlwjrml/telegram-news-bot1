@@ -116,4 +116,4 @@ def fetch_and_filter_news():
 if __name__ == "__main__":
     while True:
         fetch_and_filter_news()
-        time.sleep(30)
+        time.sleep(5)
