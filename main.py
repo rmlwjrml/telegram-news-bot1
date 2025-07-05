@@ -43,17 +43,35 @@ keywords = [
     "핵심소재", "핵폐기물", "화장품", "환경규제", "황사", "황사경보", "황사주의보",
     "황사특보", "황사피해", "휴머노이드", "휴전", "희토류", "잭슨황", "우주항공", "항공사",
     "항공우주", "한류", "한한령", "생명과학", "줄기세포", "mRNA", "ms", "네이버페이",
-    "리튬", "니켈", "도시재생", "규제완화", "감세", "세제혜택", "李", "兆", "美", "한미", "러시아", "우크라이나"
+    "리튬", "니켈", "도시재생", "규제완화", "감세", "세제혜택", "李", "兆", "美"
 ]
 
+# RSS 지원되는 뉴스 사이트 목록
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",
     "https://rss.etnews.com/ETnews.xml",
+    "https://rss.etnews.com/Section901.xml",
+    "https://rss.etnews.com/Section902.xml",
+    "https://rss.etnews.com/Section903.xml",
+    "https://rss.etnews.com/Section904.xml",
+    "https://rss.etnews.com/02.xml",
+    "https://rss.etnews.com/02024.xml",
+    "https://rss.etnews.com/02027.xml",
+    "https://rss.etnews.com/04.xml",
+    "https://rss.etnews.com/04046.xml",
     "https://www.hankyung.com/feed",
     "https://www.edaily.co.kr/rss/news.xml",
     "https://www.infostockdaily.co.kr/rss/allArticle.xml",
     "https://www.yonhapnewstv.co.kr/browse/feed/",
     "https://www.mk.co.kr/rss/30000001/",
+    "https://www.mk.co.kr/rss/40300001/",
+    "https://www.mk.co.kr/rss/30100041/",
+    "https://www.mk.co.kr/rss/30200030/",
+    "https://www.mk.co.kr/rss/30300018/",
+    "https://www.mk.co.kr/rss/50200011/",
+    "https://www.mk.co.kr/rss/50300009/",
+    "https://www.mk.co.kr/rss/30000023/",
+    "https://www.mk.co.kr/rss/71000001/",
     "https://www.fntimes.com/rss/allArticle.xml",
     "https://www.seoulfn.com/rss/allArticle.xml",
     "https://www.kpinews.co.kr/rss/allArticle.xml",
@@ -63,10 +81,14 @@ news_sites = [
     "https://www.consumernews.co.kr/rss/allArticle.xml",
     "https://www.ekn.kr/rss/allArticle.xml",
     "https://www.paxnet.co.kr/rss/main.xml",
-    "https://www.hankyung.com/it/feed",
-    "https://www.hankyung.com/economy/feed",
     "https://biz.chosun.com/rss/chosunbiz.xml",
-    "https://www.sedaily.com/NewsList/GB01"
+    "https://www.sedaily.com/NewsList/GB01",
+    "http://imnews.imbc.com/rss/news/news_00.xml",
+    "http://imnews.imbc.com/rss/news/news_01.xml",
+    "http://imnews.imbc.com/rss/news/news_04.xml",
+    "http://www.chosun.com/site/data/rss/rss.xml",
+    "http://www.khan.co.kr/rss/rssdata/total_news.xml",
+    "http://www.khan.co.kr/rss/rssdata/economy.xml"
 ]
 
 def fetch_and_filter_news():
@@ -102,7 +124,6 @@ def fetch_and_filter_news():
                     except:
                         continue
 
-                # ✅ 링크 기준 중복 필터
                 if link in sent_links:
                     continue
                 sent_links.add(link)
@@ -116,4 +137,4 @@ def fetch_and_filter_news():
 if __name__ == "__main__":
     while True:
         fetch_and_filter_news()
-        time.sleep(5)
+        time.sleep(5)  # 검색 주기를 5초로 줄임
