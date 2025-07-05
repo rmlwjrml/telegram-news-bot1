@@ -8,7 +8,7 @@ import pytz
 # 한국 시간대 기준
 kst = pytz.timezone('Asia/Seoul')
 now = datetime.now(kst)
-one_hour_ago = now - timedelta(hours=1)
+five_minutes_ago = now - timedelta(minutes=5)
 
 # 텔레그램 봇 설정
 TELEGRAM_TOKEN = "7440645018:AAG_yFBsdyaMmhK_He7lI3EBWggLK9wenXg"
@@ -78,8 +78,8 @@ def fetch_and_filter_news():
                     continue
                 pub_datetime = datetime(*pub_struct[:6], tzinfo=pytz.utc).astimezone(kst)
 
-                # ▶▶ 1시간 이내 기사만 통과 ◀◀
-                if pub_datetime < one_hour_ago or pub_datetime > now:
+                # ▶▶ 5분 이내 뉴스만 필터링 ◀◀
+                if pub_datetime < five_minutes_ago or pub_datetime > now:
                     continue
 
                 # 제목 깨짐 보정
