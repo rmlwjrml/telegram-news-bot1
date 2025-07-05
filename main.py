@@ -88,8 +88,8 @@ def fetch_and_filter_news():
                         continue
 
                 if any(k in title for k in keywords):
-                    bot.send_message(chat_id=CHAT_ID, text=f"[{title}]\n{link}")
-{link}")
+                    bot.send_message(chat_id=CHAT_ID, text=f"""[{title}]
+{link}""")
 
         except Exception as e:
             continue
