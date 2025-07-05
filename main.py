@@ -15,10 +15,11 @@ TELEGRAM_TOKEN = "7440645018:AAG_yFBsdyaMmhK_He7lI3EBWggLK9wenXg"
 CHAT_ID = "5639589613"
 bot = Bot(token=TELEGRAM_TOKEN)
 
-# 중복 방지를 위한 제목 저장 세트
+# 중복 방지를 위한 제목·링크 저장 세트
 sent_titles = set()
+sent_links = set()
 
-# 키워드 200여개 (실전용)
+# 키워드 (200여개)
 keywords = [
     "스테이블코인", "GPT", "전선", "전력망", "AI", "재생에너지", "바이오", "로봇", "초전도체", "친환경에너지",
     "우크라이나", "전쟁", "수소", "휴머노이드", "데이터센터", "항공사", "항공우주", "유전자치료", "줄기세포", "자율주행",
@@ -38,7 +39,7 @@ keywords = [
     "챗GPT", "핑크퐁", "아기상어", "마귀상어", "대왕고래", "국가전략산업", "국산화", "기업결합", "넷플릭스", "구글", "카카오페이"
 ]
 
-# 대표 뉴스 채널 RSS (요청 시 100개 확장 가능)
+# 대표 뉴스 채널 RSS
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",
     "https://rss.etnews.com/ETnews.xml",
@@ -59,7 +60,7 @@ news_sites = [
     "https://www.hankyung.com/it/feed",
     "https://www.hankyung.com/economy/feed",
     "https://biz.chosun.com/rss/chosunbiz.xml",
-    "https://www.sedaily.com/NewsList/GB01",
+    "https://www.sedaily.com/NewsList/GB01"
 ]
 
 def fetch_and_filter_news():
@@ -67,27 +68,27 @@ def fetch_and_filter_news():
         try:
             rss = feedparser.parse(url)
             for entry in rss.entries:
-                title = entry.title
-                link = entry.link
+                raw_title = entry.title
+                title = raw_title.strip().lower()
+                link = entry.link.strip()
 
                 # 유튜브 제외
                 if "youtube.com" in link or "youtu.be" in link:
                     continue
 
-                # 중복제거
-                if title in sent_titles:
+                # 중복 제거
+                if title in sent_titles or link in sent_links:
                     continue
 
-                # 날짜 파싱 및 1시간 이내 필터
+                # 날짜 파싱
                 pub_date = entry.get("published_parsed") or entry.get("updated_parsed")
                 if not pub_date:
                     continue
-
                 pub_datetime = datetime(*pub_date[:6], tzinfo=pytz.utc).astimezone(kst)
                 if pub_datetime < one_hour_ago:
                     continue
 
-                # 인코딩 깨지는 채널 보정
+                # 제목 깨짐 보정
                 if any(domain in url for domain in ["asiae", "edaily", "infostock"]):
                     try:
                         html = requests.get(link, timeout=5)
@@ -95,13 +96,16 @@ def fetch_and_filter_news():
                         soup = BeautifulSoup(html.text, "html.parser")
                         og_title = soup.select_one("meta[property='og:title']")
                         if og_title:
-                            title = og_title["content"]
+                            raw_title = og_title["content"]
+                            title = raw_title.strip().lower()
                     except:
                         continue
 
-                if any(k in title for k in keywords):
+                # 키워드 필터링
+                if any(k in raw_title for k in keywords):
                     sent_titles.add(title)
-                    bot.send_message(chat_id=CHAT_ID, text=f"[{title}]\n{link}")
+                    sent_links.add(link)
+                    bot.send_message(chat_id=CHAT_ID, text=f"[{raw_title}]\n{link}")
 
         except Exception as e:
             continue
