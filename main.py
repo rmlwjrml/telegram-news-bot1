@@ -6,18 +6,18 @@ from telegram import Bot
 import pytz
 import time
 
-# 한국 시간대 기준
+# 한국 시간대
 kst = pytz.timezone('Asia/Seoul')
 
-# 텔레그램 봇 설정
+# 텔레그램 설정
 TELEGRAM_TOKEN = "7440645018:AAG_yFBsdyaMmhK_He7lI3EBWggLK9wenXg"
 CHAT_ID = "5639589613"
 bot = Bot(token=TELEGRAM_TOKEN)
 
-# 이미 전송한 뉴스 제목 저장 (중복 방지용)
-sent_titles = set()
+# 이미 전송한 뉴스 링크 저장
+sent_links = set()
 
-# 키워드 리스트 (네가 마지막으로 준 200여 개 키워드 모두 포함)
+# 키워드 리스트
 keywords = [
     "2차전지", "4인뱅", "4인터넷", "5G", "AI", "AI고속도로", "AI반도체", "AR", "AWS", "BMS",
     "ESS", "FDA승인", "GPT", "GPT칩", "IRA", "K문화", "K뷰티", "K콘텐츠", "LNG", "NFT",
@@ -43,10 +43,9 @@ keywords = [
     "핵심소재", "핵폐기물", "화장품", "환경규제", "황사", "황사경보", "황사주의보",
     "황사특보", "황사피해", "휴머노이드", "휴전", "희토류", "잭슨황", "우주항공", "항공사",
     "항공우주", "한류", "한한령", "생명과학", "줄기세포", "mRNA", "ms", "네이버페이",
-    "리튬", "니켈", "도시재생", "규제완화", "감세", "세제혜택", "李", "兆", "美", "폭염"
+    "리튬", "니켈", "도시재생", "규제완화", "감세", "세제혜택", "李", "兆", "美"
 ]
 
-# 뉴스 사이트 리스트
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",
     "https://rss.etnews.com/ETnews.xml",
@@ -81,21 +80,17 @@ def fetch_and_filter_news():
                 raw_title = entry.title.strip()
                 link = entry.link.strip()
 
-                # 유튜브 제외
                 if "youtube.com" in link or "youtu.be" in link:
                     continue
 
-                # 날짜 파싱
                 pub_struct = entry.get("published_parsed") or entry.get("updated_parsed")
                 if not pub_struct:
                     continue
                 pub_datetime = datetime(*pub_struct[:6], tzinfo=pytz.utc).astimezone(kst)
 
-                # 5분 이내 뉴스만
                 if pub_datetime < five_minutes_ago or pub_datetime > now:
                     continue
 
-                # 제목 깨짐 보정
                 if any(domain in url for domain in ["asiae", "edaily", "infostock"]):
                     try:
                         html = requests.get(link, timeout=5)
@@ -107,19 +102,17 @@ def fetch_and_filter_news():
                     except:
                         continue
 
-                # 중복 방지
-                if raw_title in sent_titles:
+                # ✅ 링크 기준 중복 필터
+                if link in sent_links:
                     continue
-                sent_titles.add(raw_title)
+                sent_links.add(link)
 
-                # 키워드 필터링
                 if any(k in raw_title for k in keywords):
                     bot.send_message(chat_id=CHAT_ID, text=f"[{raw_title}]\n{link}")
 
         except Exception:
             continue
 
-# 30초마다 반복 실행
 if __name__ == "__main__":
     while True:
         fetch_and_filter_news()
