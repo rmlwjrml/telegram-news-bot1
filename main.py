@@ -4,18 +4,21 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from telegram import Bot
 import pytz
+import time
 
 # 한국 시간대 기준
 kst = pytz.timezone('Asia/Seoul')
-now = datetime.now(kst)
-five_minutes_ago = now - timedelta(minutes=5)
 
 # 텔레그램 봇 설정
 TELEGRAM_TOKEN = "7440645018:AAG_yFBsdyaMmhK_He7lI3EBWggLK9wenXg"
 CHAT_ID = "5639589613"
 bot = Bot(token=TELEGRAM_TOKEN)
 
-# 키워드 (200여개 그대로 유지)
+# 중복 방지를 위한 제목·링크 저장 세트
+sent_titles = set()
+sent_links = set()
+
+# 키워드 (200여개 모두 포함)
 keywords = [
     "스테이블코인", "GPT", "전선", "전력망", "AI", "재생에너지", "바이오", "로봇", "초전도체", "친환경에너지",
     "우크라이나", "전쟁", "수소", "휴머노이드", "데이터센터", "항공사", "항공우주", "유전자치료", "줄기세포", "자율주행",
@@ -35,7 +38,7 @@ keywords = [
     "챗GPT", "핑크퐁", "아기상어", "마귀상어", "대왕고래", "국가전략산업", "국산화", "기업결합", "넷플릭스", "구글", "카카오페이"
 ]
 
-# 뉴스 채널 (20개 그대로 유지)
+# 대표 뉴스 채널 RSS 주소 (20개 모두 포함)
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",
     "https://rss.etnews.com/ETnews.xml",
@@ -60,26 +63,31 @@ news_sites = [
 ]
 
 def fetch_and_filter_news():
+    now = datetime.now(kst)
+    five_minutes_ago = now - timedelta(minutes=5)
+
     for url in news_sites:
         try:
             rss = feedparser.parse(url)
             for entry in rss.entries:
                 raw_title = entry.title
-                title = raw_title.strip()
+                title = raw_title.strip().lower()
                 link = entry.link.strip()
 
                 # 유튜브 제외
                 if "youtube.com" in link or "youtu.be" in link:
                     continue
 
-                # 날짜 파싱
-                pub_struct = entry.get("published_parsed") or entry.get("updated_parsed")
-                if not pub_struct:
+                # 중복 제거
+                if title in sent_titles or link in sent_links:
                     continue
-                pub_datetime = datetime(*pub_struct[:6], tzinfo=pytz.utc).astimezone(kst)
 
-                # ▶▶ 5분 이내 뉴스만 필터링 ◀◀
-                if pub_datetime < five_minutes_ago or pub_datetime > now:
+                # 날짜 파싱
+                pub_date = entry.get("published_parsed") or entry.get("updated_parsed")
+                if not pub_date:
+                    continue
+                pub_datetime = datetime(*pub_date[:6], tzinfo=pytz.utc).astimezone(kst)
+                if pub_datetime < five_minutes_ago:
                     continue
 
                 # 제목 깨짐 보정
@@ -91,19 +99,21 @@ def fetch_and_filter_news():
                         og_title = soup.select_one("meta[property='og:title']")
                         if og_title:
                             raw_title = og_title["content"]
-                            title = raw_title.strip()
+                            title = raw_title.strip().lower()
                     except:
                         continue
 
                 # 키워드 필터링
                 if any(k in raw_title for k in keywords):
+                    sent_titles.add(title)
+                    sent_links.add(link)
                     bot.send_message(chat_id=CHAT_ID, text=f"[{raw_title}]\n{link}")
 
-        except Exception:
+        except Exception as e:
             continue
 
+# 30초마다 반복 실행
 if __name__ == "__main__":
-    fetch_and_filter_news()
-
-if __name__ == "__main__":
-    fetch_and_filter_news()
+    while True:
+        fetch_and_filter_news()
+        time.sleep(30)
