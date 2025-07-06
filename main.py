@@ -84,15 +84,15 @@ news_sites = [
     "http://rss.newspim.com/news/category/1",                      # 뉴스핌(전체)
     "https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
     "https://www.venturesquare.net/feed",                          # 벤처스퀘어(전체)
-    "https://www.news1.kr/articles/rss/",                              # 뉴스1(전체)
+    "https://www.news1.kr/articles/rss/",                                                  # 뉴스1(전체)
     "https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
-    "https://www.newsis.com/pct/rss.xml",                              # 뉴시스(전체)
+    "https://www.newsis.com/pct/rss.xml",                                                  # 뉴시스(전체)
     "http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
-    "http://rss.donga.com/total.xml",                              # 동아일보(전체)
+    "http://rss.donga.com/total.xml",                                                      # 동아일보(전체)
     "http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
     "http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
     "http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
-    "http://rss.mt.co.kr/mt_news.xml",                                 # 머니투데이(최신기사)
+    "http://rss.mt.co.kr/mt_news.xml",                                                    # 머니투데이(최신기사)
     "http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
     "http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
     "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
@@ -141,6 +141,7 @@ news_sites = [
     "http://www.cstimes.com/rss/allArticle.xml",                   # 컨슈머타임스전체기사
     "http://www.top-rider.com/rss/allArticle.xml",                 # 탑라이더전체기사
     "https://www.tongilnews.com/rss/allArticle.xml",               # 통일뉴스전체기사
+    "https://www.pressian.com/api/v3/site/rss/news",                                          # 프레시안최신기사
     "http://www.efnews.co.kr/rss/allArticle.xml",                  # 파이낸셜신문전체기사
     "https://www.hanion.co.kr/rss/allArticle.xml",                # 한겨레온전체기사
     "https://www.hankyung.com/feed/all-news",                     # 한국경제(전체)
