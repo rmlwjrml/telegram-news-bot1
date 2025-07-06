@@ -82,10 +82,12 @@ news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",                     # 아시아경제
 "https://www.khan.co.kr/rss/rssdata/total_news.xml".           # 경향신문
 "https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
+"https://www.venturesquare.net/feed",                          # 벤처스퀘어(전체)
 "http://rss.newspim.com/news/category/1",                      # 뉴스핌
 "https://rss.etnews.com/ETnews.xml", 
 "https://www.hankyung.com/feed",
 "https://www.edaily.co.kr/rss/news.xml",
+"https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이(전체)
 "https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
 "https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
 "https://www.mk.co.kr/rss/30000001/",                          # 매일경제(헤드라인 전체)
@@ -105,6 +107,7 @@ news_sites = [
 "https://www.kpinews.co.kr/rss/allArticle.xml",
 "https://www.kbiznews.co.kr/rss/allArticle.xml",
 "https://www.itooza.com/rss/today.xml",
+"http://www.kukinews.com/rss/kukiRssAll.xml",                 # 쿠키뉴스(전체)
 "https://www.kukinews.com/rss/allArticle.xml",
 "https://www.consumernews.co.kr/rss/allArticle.xml",
 "https://www.ekn.kr/rss/allArticle.xml",
