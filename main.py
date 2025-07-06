@@ -92,6 +92,23 @@ news_sites = [
     "https://www.asiatoday.co.kr/rss/rss.xml",
     "https://rss.mk.co.kr",
     "https://www.tokenpost.kr/rss",
+    "https://www.seoulfn.com/rss/allArticle.xml",
+    "https://www.kpinews.co.kr/rss/allArticle.xml",
+    "https://www.kbiznews.co.kr/rss/allArticle.xml",
+    "https://www.itooza.com/rss/today.xml",
+    "https://www.kukinews.com/rss/allArticle.xml",
+    "https://www.consumernews.co.kr/rss/allArticle.xml",
+    "https://www.ekn.kr/rss/allArticle.xml",
+    "https://www.paxnet.co.kr/rss/main.xml",
+    "https://www.hankyung.com/it/feed",
+    "https://www.hankyung.com/economy/feed",
+    "https://biz.chosun.com/rss/chosunbiz.xml",
+    "https://www.sedaily.com/NewsList/GB01",
+    "https://news.mt.co.kr/mtview/rss",
+    "https://news.nate.com/rss/news.xml",
+    "https://www.zdnet.co.kr/news/news_xml.html",
+    "https://www.ddaily.co.kr/rss/allArticle.xml",
+    "https://www.khan.co.kr/rss/rssdata/kh_news.xml",
 ]
 
 def fetch_and_filter_news():
