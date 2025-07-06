@@ -90,7 +90,9 @@ news_sites = [
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
 "https://www.yna.co.kr/pg/rss",
-"https://www.asiatoday.co.kr/rss/rss.xml",
+"https://www.yna.co.kr/section/rss/all.xml",                   # 연합뉴스
+"https://www.asiatoday.co.kr/rss/rss.xml",                     # 아시아투데이
+"https://www.seoul.co.kr/xml/rss/rss_top.xml",                 # 서울신문
 "https://rss.mk.co.kr",
 "https://www.tokenpost.kr/rss",                                # 토큰포스트
 "https://www.seoulfn.com/rss/allArticle.xml",
