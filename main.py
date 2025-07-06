@@ -98,6 +98,7 @@ news_sites = [
 "http://media.daum.net/rss/today/primary/all/rss2.xml",        # 다움(종합)
 "http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
 "http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
+"http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
 "http://rss.segye.com/segye_recent.xml",                       # 세계일보(최신기사)
 "http://rss.segye.com/segye_total.xml",                        # 세계일보(종합)
 "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
