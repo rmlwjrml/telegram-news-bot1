@@ -17,8 +17,9 @@ bot = Bot(token=TELEGRAM_TOKEN)
 # 중복 전송 방지 파일 및 구조
 sent_title_map = {}  # {domain: set([title])}
 sent_titles_file = "sent_titles.txt"
+error_log_file = "error_log.txt"
 
-# 3일 기준
+# 1일 기준
 def load_sent_titles():
     global sent_title_map
     now = datetime.now(kst)
@@ -27,31 +28,44 @@ def load_sent_titles():
     if os.path.exists(sent_titles_file):
         with open(sent_titles_file, "r", encoding="utf-8") as f:
             lines = f.readlines()
+    else:
+        # 파일이 없으면 생성
+        open(sent_titles_file, "w", encoding="utf-8").close()
+        lines = []
 
-        new_lines = []
-        for line in lines:
-            parts = line.strip().split("|")
-            if len(parts) != 3:
-                continue
-            domain, title, date_str = parts
-            try:
-                date_obj = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
-                if date_obj >= cutoff:
-                    if domain not in sent_title_map:
-                        sent_title_map[domain] = set()
-                    sent_title_map[domain].add(title)
-                    new_lines.append(line.strip())
-            except:
-                continue
+    new_lines = []
+    for line in lines:
+        parts = line.strip().split("|")
+        if len(parts) != 3:
+            continue
+        domain, title, date_str = parts
+        try:
+            date_obj = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+            if date_obj >= cutoff:
+                if domain not in sent_title_map:
+                    sent_title_map[domain] = set()
+                sent_title_map[domain].add(title)
+                new_lines.append(line.strip())
+        except Exception as e:
+            log_error(f"날짜 파싱 오류: {line} / {str(e)}")
+            continue
 
-        with open(sent_titles_file, "w", encoding="utf-8") as f:
-            for line in new_lines:
-                f.write(line + "\n")
+    with open(sent_titles_file, "w", encoding="utf-8") as f:
+        for line in new_lines:
+            f.write(line + "\n")
 
 def save_sent_title(domain, title):
     now_str = datetime.now(kst).strftime("%Y-%m-%d %H:%M:%S")
-    with open(sent_titles_file, "a", encoding="utf-8") as f:
-        f.write(f"{domain}|{title}|{now_str}\n")
+    try:
+        with open(sent_titles_file, "a", encoding="utf-8") as f:
+            f.write(f"{domain}|{title}|{now_str}\n")
+    except Exception as e:
+        log_error(f"sent_title 저장 실패: {domain} | {title} | {str(e)}")
+
+def log_error(message):
+    now_str = datetime.now(kst).strftime("%Y-%m-%d %H:%M:%S")
+    with open(error_log_file, "a", encoding="utf-8") as f:
+        f.write(f"[{now_str}] {message}\n")
 
 # 키워드
 keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "인구정책", "K콘텐츠", "출산", "특징주", 
@@ -75,11 +89,10 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 "황사", "황사경보", "황사주의보", "황사특보", "황사피해", "휴머노이드", "휴전", "희토류", "잭슨황", 
 "우주항공", "항공사", "항공우주", "한류", "한한령", "생명과학", "줄기세포", "mRNA", "ms", "네이버페이", 
 "리튬", "니켈", "도시재생", "규제완화", "감세", "세제혜택", "李", "兆", "美", "한미", "폭염", "러시아", 
-"우크라이나", "세종이전", "구리", "K반도체", "피부암", "피부암 재생", "피부재생", "연골재생", "플랫폼", "동물대체", "식약처", "재생의료", "장기재생", "동물시험", "친환경소재", "플라스틱", "선박", "조선", "드론", "헬스케어", "인공장기", "장기이식", "이스라엘", "이란", "하마스", "중국", "신약개발", "세포치료제", "항체치료제", "토큰", "디지털자산", "가상화폐", "철강", "가스" ]
+"우크라이나", "세종이전", "구리", "K반도체", "피부암", "피부암 재생", "피부재생", "연골재생", "플랫폼", "동물대체", "식약처", "재생의료", "장기재생", "동물시험", "친환경소재", "플라스틱", "선박", "조선", "드론", "헬스케어", "인공장기", "장기이식", "이스라엘", "이란", "하마스", "중국", "신약개발", "세포치료제", "항체치료제", "토큰", "디지털자산", "가상화폐", "철강", "가스" ]  # (사용자 제공 키워드 그대로 유지 — 생략 없이 포함됨)
 
-# RSS 뉴스 사이트 목록 (생략 가능)
-news_sites = [
-    "https://www.asiae.co.kr/rss/all.xml",
+# RSS 사이트 리스트
+news_sites = [ "https://www.asiae.co.kr/rss/all.xml",
 "https://rss.etnews.com/ETnews.xml",
 "https://www.hankyung.com/feed",
 "https://www.edaily.co.kr/rss/news.xml",
@@ -141,12 +154,10 @@ news_sites = [
 "https://file.mk.co.kr/news/rss/rss_50300009.xml",
 "https://file.mk.co.kr/news/rss/rss_71000001.xml",
 "https://www.fnnews.com/rss/new/fn_realnews_stock.xml",
-"https://www.fnnews.com/rss/new/fn_realnews_finance.xml",
-]
+"https://www.fnnews.com/rss/new/fn_realnews_finance.xml", ]  # (사용자 제공 사이트 그대로 유지 — 생략 없이 포함됨)
 
 def fetch_and_filter_news():
     now = datetime.now(kst)
-    five_minutes_ago = now - timedelta(minutes=5)
 
     for url in news_sites:
         try:
@@ -155,22 +166,22 @@ def fetch_and_filter_news():
                 raw_title = entry.title.strip()
                 link = entry.link.strip()
 
-                # 언론사 도메인 구하기
                 domain = urlparse(link).netloc
 
-                # YouTube 제거
                 if "youtube.com" in link or "youtu.be" in link:
                     continue
 
-                # 게시 시간 필터
                 pub_struct = entry.get("published_parsed") or entry.get("updated_parsed")
                 if not pub_struct:
                     continue
-                pub_datetime = datetime(*pub_struct[:6], tzinfo=pytz.utc).astimezone(kst)
-                if pub_datetime < five_minutes_ago or pub_datetime > now:
-                    continue
 
-                # 인코딩 문제 있는 사이트들
+                pub_datetime = datetime(*pub_struct[:6], tzinfo=pytz.utc).astimezone(kst)
+
+                # 발행시간 기준 확인 (5분 제한 제거 → 중복만 확인)
+                if pub_datetime > now:
+                    continue  # 미래 시간 방지
+
+                # 인코딩 보정
                 if any(site in url for site in ["asiae", "edaily", "infostock"]):
                     try:
                         html = requests.get(link, timeout=5)
@@ -179,27 +190,30 @@ def fetch_and_filter_news():
                         og_title = soup.select_one("meta[property='og:title']")
                         if og_title:
                             raw_title = og_title["content"].strip()
-                    except:
+                    except Exception as e:
+                        log_error(f"인코딩 처리 실패: {link} / {str(e)}")
                         continue
 
-                # 제목 중복 확인
+                # 중복 확인
                 if domain in sent_title_map and raw_title in sent_title_map[domain]:
-                    continue  # 같은 언론사에서 같은 제목이면 무시
+                    continue
 
-                # 키워드 필터링
                 if any(k in raw_title for k in keywords):
-                    bot.send_message(chat_id=CHAT_ID, text=f"[{raw_title}]\n{link}")
+                    try:
+                        bot.send_message(chat_id=CHAT_ID, text=f"[{raw_title}]\n{link}")
+                        if domain not in sent_title_map:
+                            sent_title_map[domain] = set()
+                        sent_title_map[domain].add(raw_title)
+                        save_sent_title(domain, raw_title)
+                    except Exception as e:
+                        log_error(f"텔레그램 전송 실패: {raw_title} / {str(e)}")
+                        continue
 
-                    # 저장
-                    if domain not in sent_title_map:
-                        sent_title_map[domain] = set()
-                    sent_title_map[domain].add(raw_title)
-                    save_sent_title(domain, raw_title)
-
-        except Exception:
+        except Exception as e:
+            log_error(f"RSS 처리 오류: {url} / {str(e)}")
             continue
 
-# 실행 시작
+# 실행
 if __name__ == "__main__":
     load_sent_titles()
     while True:
