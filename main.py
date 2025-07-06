@@ -79,19 +79,20 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 
 # RSS 뉴스 사이트 목록 (생략 가능)
 news_sites = [
-    "https://www.asiae.co.kr/rss/all.xml",
-"https://rss.etnews.com/ETnews.xml",
+    "https://www.asiae.co.kr/rss/all.xml",                     # 아시아경제
+"http://rss.newspim.com/news/category/1",                      # 뉴스핌
+"https://rss.etnews.com/ETnews.xml", 
 "https://www.hankyung.com/feed",
 "https://www.edaily.co.kr/rss/news.xml",
-"https://www.infostockdaily.co.kr/rss/allArticle.xml",
-"https://www.yonhapnewstv.co.kr/browse/feed/",
+"https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
+"https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
 "https://www.mk.co.kr/rss/30000001/",
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
 "https://www.yna.co.kr/pg/rss",
 "https://www.asiatoday.co.kr/rss/rss.xml",
 "https://rss.mk.co.kr",
-"https://www.tokenpost.kr/rss",
+"https://www.tokenpost.kr/rss",                                # 토큰포스트
 "https://www.seoulfn.com/rss/allArticle.xml",
 "https://www.kpinews.co.kr/rss/allArticle.xml",
 "https://www.kbiznews.co.kr/rss/allArticle.xml",
@@ -100,48 +101,31 @@ news_sites = [
 "https://www.consumernews.co.kr/rss/allArticle.xml",
 "https://www.ekn.kr/rss/allArticle.xml",
 "https://www.paxnet.co.kr/rss/main.xml",
-"https://www.hankyung.com/it/feed",
+"https://www.hankyung.com/it/feed",                          # 한국경제 종합
 "https://www.hankyung.com/economy/feed",
-"https://biz.chosun.com/rss/chosunbiz.xml",
-"https://www.sedaily.com/NewsList/GB01",
-"https://news.mt.co.kr/mtview/rss",
-"https://news.nate.com/rss/news.xml",
-"https://www.zdnet.co.kr/news/news_xml.html",
-"https://www.ddaily.co.kr/rss/allArticle.xml",
-"https://www.khan.co.kr/rss/rssdata/kh_news.xml",
+"https://biz.chosun.com/rss/chosunbiz.xml",                  # 조선비즈
+"https://www.sedaily.com/NewsList/GB01",                     # 서울경제 (메인 RSS)
+"https://news.mt.co.kr/mtview/rss",                          # 머니투데이
+"https://news.nate.com/rss/news.xml",                        # 네이트뉴스
+"https://www.zdnet.co.kr/news/news_xml.html",                # ZDNet Korea
+"https://www.ddaily.co.kr/rss/allArticle.xml",               # 디지털데일리
+"https://www.khan.co.kr/rss/rssdata/kh_news.xml",            # 경향신문(전체)
 "https://www.asiae.co.kr/news/rss/asia_rss.htm",
-"https://rss.etnews.com/Section902.xml",
-"https://rss.etnews.com/Section901.xml",
-"https://rss.etnews.com/Section903.xml",
-"https://rss.etnews.com/Section904.xml",
-"https://rss.hankyung.com/new/news_stock.xml",
-"https://rss.hankyung.com/new/news_economy.xml",
-"https://rss.hankyung.com/new/news_industry.xml",
-"https://rss.hankyung.com/new/news_intl.xml",
-"https://rss.hankyung.com/new/news_politics.xml",
-"https://rss.fnnews.com/rss/new/fn_realnews_all.xml",
-"https://rss.fnnews.com/rss/new/fn_realnews_economy.xml",
-"https://rss.fnnews.com/rss/new/fn_realnews_politics.xml",
-"https://rss.fnnews.com/rss/new/fn_realnews_it.xml",
-"https://rss.edaily.co.kr/edaily_news.xml",
-"https://rss.edaily.co.kr/stock_news.xml",
-"https://rss.edaily.co.kr/economy_news.xml",
-"https://rss.edaily.co.kr/finance_news.xml",
-"https://rss.edaily.co.kr/bondfx_news.xml",
-"https://rss.edaily.co.kr/enterprise_news.xml",
-"https://rss.edaily.co.kr/world_news.xml",
-"https://rss.edaily.co.kr/realestate_news.xml",
-"https://rss.edaily.co.kr/happypot_news.xml",
-"https://rss.edaily.co.kr/edaily_column.xml",
-"https://file.mk.co.kr/news/rss/rss_30100041.xml",
-"https://file.mk.co.kr/news/rss/rss_30200030.xml",
-"https://file.mk.co.kr/news/rss/rss_30300018.xml",
-"https://file.mk.co.kr/news/rss/rss_30000023.xml",
-"https://file.mk.co.kr/news/rss/rss_50200011.xml",
-"https://file.mk.co.kr/news/rss/rss_50300009.xml",
-"https://file.mk.co.kr/news/rss/rss_71000001.xml",
-"https://www.fnnews.com/rss/new/fn_realnews_stock.xml",
-"https://www.fnnews.com/rss/new/fn_realnews_finance.xml",
+"https://rss.etnews.com/Section902.xml",                     # 전자신문(뉴스속보)
+"https://rss.etnews.com/Section901.xml",                     # 전자신문(오늘의 뉴스)
+"https://rss.etnews.com/Section903.xml",                     # 전자신문(인기기사)
+"https://rss.etnews.com/Section904.xml",                     # 전자신문(추천기사)
+"https://rss.fnnews.com/rss/new/fn_realnews_all.xml",        # 파이낸셜뉴스(종합)
+"https://rss.edaily.co.kr/edaily_news.xml",                  # 이데일리(전체)
+"https://file.mk.co.kr/news/rss/rss_30100041.xml",           # 매경(경제)
+"https://file.mk.co.kr/news/rss/rss_30200030.xml",           # 매경(정치)
+"https://file.mk.co.kr/news/rss/rss_30300018.xml",           # 매경(국제)
+"https://file.mk.co.kr/news/rss/rss_30000023.xml",           # 매경(연예/문화)
+"https://file.mk.co.kr/news/rss/rss_50200011.xml",           # 매경(증권)
+"https://file.mk.co.kr/news/rss/rss_50300009.xml",           # 매경(부동산)
+"https://file.mk.co.kr/news/rss/rss_71000001.xml",           # 매경(스포츠)
+"https://www.fnnews.com/rss/new/fn_realnews_stock.xml",      # 파이낸셜뉴스(증권)
+"https://www.fnnews.com/rss/new/fn_realnews_finance.xml",    # 파이낸셜뉴스(금융)
 ]
 
 def fetch_and_filter_news():
