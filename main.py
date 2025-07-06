@@ -90,13 +90,10 @@ news_sites = [
     "http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
     "http://rss.donga.com/total.xml",                              # 동아일보(전체)
     "http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
-    "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", # 조선닷컴(전체)
     "http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
     "http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
     "http://rss.mt.co.kr/mt_news.xml",                             # 머니투데이(최신기사)
     "http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
-    "http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
-    "http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
     "http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
     "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
     "http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
@@ -113,14 +110,12 @@ news_sites = [
     "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
     "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
     "http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
-    "http://www.newsis.com/RSS/sokbo.xml",                        # 뉴시스속보
     "https://www.korea.kr/rss/reporter.xml",                      # 정책기자마당
     "https://www.korea.kr/rss/policy.xml",                        # 정책정보전체
     "https://www.korea.kr/rss/cabinet.xml",                       # 국무회의브리핑
     "https://www.korea.kr/rss/president.xml",                     # 대통령실브리핑
     "https://www.korea.kr/rss/pressrelease.xml",                  # 정부보도자료
     "https://www.korea.kr/rss/ebriefing.xml",                     # 정부브리핑
-    "https://www.korea.kr/rss/fact.xml",                          # 사실은이렇습니다
     "https://www.korea.kr/rss/speech.xml",                        # 정부연설문
     "https://www.korea.kr/rss/expdoc.xml",                        # 정책전문자료
     "http://www.datanet.co.kr/rss/S1N1.xml",                      # 데이터넷뉴스
@@ -143,7 +138,6 @@ news_sites = [
     "http://rss.ohmynews.com/rss/ohmynews.xml",                    # 오마이뉴스전체기사
     "https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이전체기사
     "http://www.focuscolorado.net/rss/allArticle.xml",             # 주간포커스전체기사
-    "https://cdn.newscj.com/rss/gns_allArticle.xml",               # 천지일보전체기사
     "http://www.cstimes.com/rss/allArticle.xml",                   # 컨슈머타임스전체기사
     "http://www.top-rider.com/rss/allArticle.xml",                 # 탑라이더전체기사
     "https://www.tongilnews.com/rss/allArticle.xml",               # 통일뉴스전체기사
