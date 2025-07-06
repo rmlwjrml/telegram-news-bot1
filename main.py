@@ -81,13 +81,16 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",                     # 아시아경제
 "https://www.khan.co.kr/rss/rssdata/total_news.xml".           # 경향신문
+"https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
 "http://rss.newspim.com/news/category/1",                      # 뉴스핌
 "https://rss.etnews.com/ETnews.xml", 
 "https://www.hankyung.com/feed",
 "https://www.edaily.co.kr/rss/news.xml",
 "https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
 "https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
-"https://www.mk.co.kr/rss/30000001/",
+"https://www.mk.co.kr/rss/30000001/",                          # 매일경제(헤드라인 전체)
+"https://www.mk.co.kr/rss/40300001/",                          # 매일경제(전체)
+"https://www.mbn.co.kr/rss/",                                  # MBN매일방송(전체)
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
 "https://www.yna.co.kr/pg/rss",
