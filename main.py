@@ -81,7 +81,7 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",                     # 아시아경제
 "https://www.khan.co.kr/rss/rssdata/total_news.xml".           # 경향신문
-"https://www.news1.kr/articles/rss/",                          # 뉴스1(전체)
+"https://www.news1.kr/articles/rss/",
 "https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
 "https://www.newsis.com/pct/rss.xml",                          # 뉴시스(전체)
 "https://rss.etnews.com/ETnews.xml", 
