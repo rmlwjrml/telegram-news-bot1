@@ -87,19 +87,19 @@ news_sites = [
     "https://www.news1.kr/articles/rss/",                                                  # 뉴스1(전체)
     "https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
     "https://www.newsis.com/pct/rss.xml",                                                  # 뉴시스(전체)
-    "http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
+    "http://www.kukinews.com/rss/kmibRssAll.xml",                                          # 국민일보(전체)
     "http://rss.donga.com/total.xml",                                                      # 동아일보(전체)
-    "http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
+    "http://www.chosun.com/site/data/rss/rss.xml",                                         # 조선닷컴(전체)
     "http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
     "http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
-    "http://rss.mt.co.kr/mt_news.xml",                                                    # 머니투데이(최신기사)
-    "http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
+    "http://rss.mt.co.kr/mt_news.xml",                                                     # 머니투데이(최신기사)
+    "http://biz.heraldm.com/rss/010000000000.xml",                                         # 헤럴드경제(전체)
     "http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
     "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
     "http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
     "http://rss.ohmynews.com/rss/top.xml",                         # 오마이뉴스(주요기사)
     "http://www.mediatoday.co.kr/rss/allArticle.xml",              # 미디어오늘(전체)
-    "http://www.zdnet.co.kr/services/rss/all/EUC/ZDNetKorea_News.asp", # 지디넷코리아(전체)
+    "http://www.zdnet.co.kr/services/rss/all/EUC/ZDNetKorea_News.asp",                    # 지디넷코리아(전체)
     "http://www.todaykorea.co.kr/rss/allArticle.xml",              # 투데이코리아(전체)
     "http://www.fnnews.com/rss/fn_realnews_all.xml",               # 파이낸셜뉴스(전체)
     "http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
@@ -108,7 +108,8 @@ news_sites = [
     "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",   # SBS주요뉴스
     "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",  # SBS뉴스속보
     "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
-    "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
+    "http://rss.nocutnews.co.kr/nocutnews.xml",                                           # 노컷뉴스전체
+    "http://www.newsdaily.kr/rss/allArticle.xml",                                         # 뉴스데일리전체
     "http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
     "https://www.korea.kr/rss/reporter.xml",                      # 정책기자마당
     "https://www.korea.kr/rss/policy.xml",                        # 정책정보전체
@@ -130,13 +131,9 @@ news_sites = [
     "http://www.sisajournal.com/rss/allArticle.xml",               # 시사저널전체기사
     "http://www.evernews.co.kr/rss/allArticle.xml",                # 에버뉴스전체기사
     "https://www.ablenews.co.kr/rss/allArticle.xml",               # 에이블뉴스전체기사
-    "http://www.womennews.co.kr/rss/allArticle.xml",               # 여성신문전체기사
-    "https://www.yna.co.kr/rss/northkorea.xml",                    # 연합뉴스북한
-    "https://www.yna.co.kr/rss/international.xml",                 # 연합뉴스세계
-    "https://www.yna.co.kr/rss/news.xml",                          # 연합뉴스최신기사
-    "https://www.yna.co.kr/rss/industry.xml",                      # 연합뉴스산업
+    "https://www.yna.co.kr/rss/news.xml",                                                     # 연합뉴스최신기사
     "http://rss.ohmynews.com/rss/ohmynews.xml",                    # 오마이뉴스전체기사
-    "https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이전체기사
+    "https://rss.etoday.co.kr/eto/etoday_news_all.xml",                                       # 이투데이전체기사
     "http://www.focuscolorado.net/rss/allArticle.xml",             # 주간포커스전체기사
     "http://www.cstimes.com/rss/allArticle.xml",                   # 컨슈머타임스전체기사
     "http://www.top-rider.com/rss/allArticle.xml",                 # 탑라이더전체기사
