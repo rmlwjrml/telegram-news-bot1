@@ -84,6 +84,9 @@ news_sites = [
 "https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
 "https://www.venturesquare.net/feed",                          # 벤처스퀘어(전체)
 "http://rss.newspim.com/news/category/1",                      # 뉴스핌
+"https://www.news1.kr/articles/rss/",                          # 뉴스1(전체)
+"https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
+"https://www.newsis.com/pct/rss.xml",                          # 뉴시스(전체)
 "https://rss.etnews.com/ETnews.xml", 
 "https://www.hankyung.com/feed",
 "https://www.edaily.co.kr/rss/news.xml",
@@ -92,6 +95,7 @@ news_sites = [
 "https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
 "https://www.mk.co.kr/rss/30000001/",                          # 매일경제(헤드라인 전체)
 "https://www.mk.co.kr/rss/40300001/",                          # 매일경제(전체)
+"http://rss.moneytoday.co.kr/mt_news.xml",                     # 머니투데이(전체)
 "https://www.mbn.co.kr/rss/",                                  # MBN매일방송(전체)
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
