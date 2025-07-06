@@ -79,7 +79,7 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 
 # RSS 뉴스 사이트 목록 (생략 가능)
 news_sites = [
-"https://www.asiae.co.kr/rss/all.xml",                         # 아시아경제
+    "https://www.asiae.co.kr/rss/all.xml",                         # 아시아경제
     "https://www.khan.co.kr/rss/rssdata/total_news.xml",           # 경향신문
     "http://rss.newspim.com/news/category/1",                      # 뉴스핌(전체)
     "https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
@@ -95,12 +95,9 @@ news_sites = [
     "http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
     "http://rss.mt.co.kr/mt_news.xml",                             # 머니투데이(최신기사)
     "http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
-    "http://media.daum.net/rss/today/primary/all/rss2.xml",        # 다움(종합)
     "http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
     "http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
     "http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
-    "http://rss.segye.com/segye_recent.xml",                       # 세계일보(최신기사)
-    "http://rss.segye.com/segye_total.xml",                        # 세계일보(종합)
     "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
     "http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
     "http://rss.ohmynews.com/rss/top.xml",                         # 오마이뉴스(주요기사)
@@ -111,12 +108,8 @@ news_sites = [
     "http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
     "http://www.ekgib.com/rss/allArticle.xml",                     # 경기일보(전체)
     "http://www.imaeil.com/rss/content/article01.xml",             # 매일신문(전체)
-    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02&plink=RSSREADER",    # SBS경제
-    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=07&plink=RSSREADER",    # SBS국제/글로벌
     "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",                   # SBS주요뉴스
-    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER",    # SBS정치
     "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",              # SBS뉴스속보
-    "https://news.sbs.co.kr/news/Special_RssFeed.do?plink=RSSREADER",               # SBS취재파일
     "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
     "http://rss.nocutnews.co.kr/nocutnews.xml",                   # 노컷뉴스전체
     "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
@@ -132,14 +125,11 @@ news_sites = [
     "https://www.korea.kr/rss/speech.xml",                        # 정부연설문
     "https://www.korea.kr/rss/expdoc.xml",                        # 정책전문자료
     "http://www.datanet.co.kr/rss/S1N1.xml",                      # 데이터넷뉴스
-    "https://www.ddanzi.com/rss",                                 # 딴지일보전체
     "https://www.labortoday.co.kr/rss/allArticle.xml",            # 매일노동뉴스전체기사
     "https://www.mediatoday.co.kr/rss/allArticle.xml",            # 미디어오늘전체기사
     "https://www.businesspost.co.kr/rss/Article.xml",             # 비지니스포스트전체기사
     "https://www.seoul.co.kr/xml/rss/rss_economy.xml",             # 서울신문경제
     "https://www.seoul.co.kr/xml/rss/rss_international.xml",      # 서울신문국제
-    "https://www.seoul.co.kr/xml/rss/rss_society.xml",            # 서울신문사회
-    "https://www.seoul.co.kr/xml/rss/rss_politics.xml",           # 서울신문정치
     "http://www.segyefn.com/views/rss/all_recent.xml",             # 세계파이낸스전체뉴스
     "http://rss.mt.co.kr/st_news.xml",                            # 스타뉴스최신기사
     "https://www.sisain.co.kr/rss/allArticle.xml",                 # 시사IN전체기사
@@ -147,11 +137,8 @@ news_sites = [
     "http://www.evernews.co.kr/rss/allArticle.xml",                # 에버뉴스전체기사
     "https://www.ablenews.co.kr/rss/allArticle.xml",               # 에이블뉴스전체기사
     "http://www.womennews.co.kr/rss/allArticle.xml",               # 여성신문전체기사
-    "https://www.yna.co.kr/rss/economy.xml",                       # 연합뉴스경제
     "https://www.yna.co.kr/rss/northkorea.xml",                    # 연합뉴스북한
     "https://www.yna.co.kr/rss/international.xml",                 # 연합뉴스세계
-    "https://www.yna.co.kr/rss/local.xml",                         # 연합뉴스전국
-    "https://www.yna.co.kr/rss/politics.xml",                      # 연합뉴스정치
     "https://www.yna.co.kr/rss/news.xml",                          # 연합뉴스최신기사
     "https://www.yna.co.kr/rss/industry.xml",                      # 연합뉴스산업
     "http://rss.ohmynews.com/rss/ohmynews.xml",                    # 오마이뉴스전체기사
@@ -165,13 +152,7 @@ news_sites = [
     "https://www.pressian.com/api/v3/site/rss/news",              # 프레시안최신기사
     "https://www.hanion.co.kr/rss/allArticle.xml",                # 한겨레온전체기사
     "https://www.hankyung.com/feed/all-news",                     # 한국경제(전체)
-    "https://news-ex.jtbc.co.kr/v1/get/rss/section/20",           # JTBC경제
-    "https://news-ex.jtbc.co.kr/v1/get/rss/section/40",           # JTBC국제
-    "https://news-ex.jtbc.co.kr/v1/get/rss/section/80",           # JTBC날씨
-    "https://news-ex.jtbc.co.kr/v1/get/rss/section/30",           # JTBC사회
     "https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",            # JTBC속보
-    "https://news-ex.jtbc.co.kr/v1/get/rss/issue",                # JTBC이슈
-    "https://news-ex.jtbc.co.kr/v1/get/rss/section/10"            # JTBC정치
 ]
 
 def fetch_and_filter_news():
@@ -234,4 +215,4 @@ if __name__ == "__main__":
     load_sent_titles()
     while True:
         fetch_and_filter_news()
-        time.sleep(5)
+        time.sleep(3)
