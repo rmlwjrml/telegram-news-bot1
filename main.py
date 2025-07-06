@@ -129,6 +129,7 @@ news_sites = [
 "https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이(전체)
 "https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
 "https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
+"https://www.yna.co.kr/pg/rss",                                # 연합뉴스
 "https://www.mk.co.kr/rss/30000001/",                          # 매일경제(헤드라인 전체)
 "https://www.mk.co.kr/rss/40300001/",                          # 매일경제(전체)
 "http://rss.moneytoday.co.kr/mt_news.xml",                     # 머니투데이(전체)
