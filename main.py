@@ -80,174 +80,98 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 # RSS 뉴스 사이트 목록 (생략 가능)
 news_sites = [
 "https://www.asiae.co.kr/rss/all.xml",                         # 아시아경제
-"https://www.khan.co.kr/rss/rssdata/total_news.xml",           # 경향신문
-"http://rss.newspim.com/news/category/1",                      # 뉴스핌(전체)
-"https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
-"https://www.venturesquare.net/feed",                          # 벤처스퀘어(전체)
-"https://www.news1.kr/articles/rss/",                          # 뉴스1(전체)
-"https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
-"https://www.newsis.com/pct/rss.xml",                          # 뉴시스(전체)
-"http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
-"http://rss.donga.com/total.xml",                              # 동아일보(전체)
-"http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
-"https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", #조선닷컴(전체)
-"http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
-"http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
-"http://rss.mt.co.kr/mt_news.xml",                             # 머니투데이(최신기사)
-"http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
-"http://media.daum.net/rss/today/primary/all/rss2.xml",        # 다움(종합)
-"http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
-"http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
-"http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
-"http://rss.segye.com/segye_recent.xml",                       # 세계일보(최신기사)
-"http://rss.segye.com/segye_total.xml",                        # 세계일보(종합)
-"http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
-"http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
-"http://rss.ohmynews.com/rss/top.xml",                         # 오마이뉴스(주요기사)
-"http://www.mediatoday.co.kr/rss/allArticle.xml",              # 미디어오늘(전체)
-"http://www.zdnet.co.kr/services/rss/all/EUC/ZDNetKorea_News.asp", #지디넷코리아(전체)
-"http://www.todaykorea.co.kr/rss/allArticle.xml",              # 투데이코리아(전체)
-"http://www.fnnews.com/rss/fn_realnews_all.xml",               # 파이낸셜뉴스(전체)
-"http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
-"http://www.ekgib.com/rss/allArticle.xml",                     # 경기일보(전체)
-"http://www.imaeil.com/rss/content/article01.xml",             # 매일신문(전체)
-"https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02&plink=RSSREADER",    # SBS경제
-"https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=07&plink=RSSREADER",    # SBS국제/글로벌
-"https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",                   # SBS주요뉴스
-"https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER",    # SBS정치
-"https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",              # SBS뉴스속보
-"https://news.sbs.co.kr/news/Special_RssFeed.do?plink=RSSREADER",               # SBS취재파일
-"https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
-"http://rss.nocutnews.co.kr/nocutnews.xml",                   # 노컷뉴스전체
-"http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
-"http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
-"http://www.newsis.com/RSS/sokbo.xml",                        # 뉴시스속보
-"https://www.korea.kr/rss/reporter.xml",                      # 정책기자마당
-"https://www.korea.kr/rss/policy.xml",                        # 정책정보전체
-"https://www.korea.kr/rss/cabinet.xml",                       # 국무회의브리핑
-"https://www.korea.kr/rss/president.xml",                     # 대통령실브리핑
-"https://www.korea.kr/rss/pressrelease.xml",                  # 정부보도자료
-"https://www.korea.kr/rss/ebriefing.xml",                     # 정부브리핑
-"https://www.korea.kr/rss/fact.xml",                          # 사실은이렇습니다
-"https://www.korea.kr/rss/speech.xml",                        # 정부연설문
-"https://www.korea.kr/rss/expdoc.xml",                        # 정책전문자료
-"http://www.datanet.co.kr/rss/S1N1.xml",                      # 데이터넷뉴스
-"https://www.ddanzi.com/rss",                                 # 딴지일보전체
-"https://www.labortoday.co.kr/rss/allArticle.xml",            # 매일노동뉴스전체기사
-"https://www.mediatoday.co.kr/rss/allArticle.xml",            # 미디어오늘전체기사
-"https://www.businesspost.co.kr/rss/Article.xml",             # 비지니스포스트전체기사
-"https://www.seoul.co.kr/xml/rss/rss_economy.xml",             # 서울신문경제
-"https://www.seoul.co.kr/xml/rss/rss_international.xml",      # 서울신문국제
-"https://www.seoul.co.kr/xml/rss/rss_society.xml",            # 서울신문사회
-"https://www.seoul.co.kr/xml/rss/rss_politics.xml",           # 서울신문정치
-"http://www.segyefn.com/views/rss/all_recent.xml",             # 세계파이낸스전체뉴스
-"http://rss.mt.co.kr/st_news.xml",                            # 스타뉴스최신기사
-"https://www.sisain.co.kr/rss/allArticle.xml",                 # 시사IN전체기사
-"http://www.sisajournal.com/rss/allArticle.xml",               # 시사저널전체기사
-"http://www.evernews.co.kr/rss/allArticle.xml",                # 에버뉴스전체기사
-"https://www.ablenews.co.kr/rss/allArticle.xml",               # 에이블뉴스전체기사
-"http://www.womennews.co.kr/rss/allArticle.xml",               # 여성신문전체기사
-"https://www.yna.co.kr/rss/economy.xml",                       # 연합뉴스경제
-"https://www.yna.co.kr/rss/northkorea.xml",                    # 연합뉴스북한
-"https://www.yna.co.kr/rss/international.xml",                 # 연합뉴스세계
-"https://www.yna.co.kr/rss/local.xml",                         # 연합뉴스전국
-"https://www.yna.co.kr/rss/politics.xml",                      # 연합뉴스정치
-"https://www.yna.co.kr/rss/news.xml",                          # 연합뉴스최신기사
-"https://www.yna.co.kr/rss/industry.xml",                      # 연합뉴스산업
-"http://rss.ohmynews.com/rss/ohmynews.xml",                    # 오마이뉴스전체기사
-"https://rss.etoday.co.kr/eto/etoday_news_all.xml",             # 이투데이전체기사
-"http://www.focuscolorado.net/rss/allArticle.xml",              # 주간포커스전체기사
-"https://cdn.newscj.com/rss/gns_allArticle.xml",                 # 천지일보전체기사
-"http://www.cstimes.com/rss/allArticle.xml",                    # 컨슈머타임스전체기사
-"http://www.top-rider.com/rss/allArticle.xml",                  # 탑라이더전체기사
-"https://www.tongilnews.com/rss/allArticle.xml",                # 통일뉴스전체기사
-"http://www.efnews.co.kr/rss/allArticle.xml",                   # 파이낸셜신문전체기사
-"https://www.pressian.com/api/v3/site/rss/news",                # 프레시안최신기사
-"https://www.hanion.co.kr/rss/allArticle.xml",                  # 한겨레온전체기사
-"https://www.hankyung.com/feed/all-news",                      # 한국경제(전체)
-"https://news-ex.jtbc.co.kr/v1/get/rss/section/20",            # JTBC경제
-"https://news-ex.jtbc.co.kr/v1/get/rss/section/40",            # JTBC국제
-"https://news-ex.jtbc.co.kr/v1/get/rss/section/80",            # JTBC날씨
-"https://news-ex.jtbc.co.kr/v1/get/rss/section/30",            # JTBC사회
-"https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",             # JTBC속보
-"https://news-ex.jtbc.co.kr/v1/get/rss/issue",                 # JTBC이슈
-"https://news-ex.jtbc.co.kr/v1/get/rss/section/10",            # JTBC정치
-"https://rss.etnews.com/ETnews.xml",
-"http://rss.hankyung.com/economy.xml",                         # 한경닷컴(경제 금융)
-"http://rss.hankyung.com/stock.xml",                           # 한경닷컴(증권)
-"http://rss.hankyung.com/industry.xml",                        # 한경닷컴(산업)
-"http://rss.hankyung.com/intl.xml",                            # 한경닷컴(국제뉴스)
-"http://rss.hankyung.com/politics.xml",                        # 한경닷컴(정치 사회)
-"http://rss.hankyung.com/xfile.xml",                           # 한경닷컴(취재기사)
-"https://www.edaily.co.kr/rss/news.xml",
-"https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이(전체)
-"https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
-"https://www.yonhapnewstv.co.kr/browse/feed/",                 # 연합뉴스TV(전체)
-"https://www.yna.co.kr/pg/rss",                                # 연합뉴스
-"https://www.mk.co.kr/rss/30000001/",                          # 매일경제(헤드라인 전체)
-"https://www.mk.co.kr/rss/40300001/",                          # 매일경제(전체)
-"http://rss.moneytoday.co.kr/mt_news.xml",                     # 머니투데이(전체)
-"https://www.mbn.co.kr/rss/",                                  # MBN매일방송(전체)
-"https://www.nextdaily.co.kr/rss/allArticle.xml",              # 넥스트데일리
-"https://www.fntimes.com/rss/allArticle.xml",
-"https://rss.mt.co.kr/rss/mt.xml",
-"https://www.yna.co.kr/pg/rss",
-"https://www.asiatoday.co.kr/rss/rss.xml",                     # 아시아투데이
-"https://www.seoul.co.kr/xml/rss/rss_top.xml",                 # 서울신문
-"http://news.kbs.co.kr/rss/rss.xml",                           # KBS
-"https://www.ytn.co.kr/_ln/0101.xml",                          # YTN
-"http://imnews.imbc.com/rss/news/news_00.xml",                 # MBC(전체)
-"https://rss.mk.co.kr",
-"https://www.tokenpost.kr/rss",                                # 토큰포스트
-"https://www.seoulfn.com/rss/allArticle.xml",
-"https://www.kpinews.co.kr/rss/allArticle.xml",
-"https://www.kbiznews.co.kr/rss/allArticle.xml",
-"https://www.itooza.com/rss/today.xml",
-"http://www.kukinews.com/rss/kukiRssAll.xml",                 # 쿠키뉴스(전체)
-"https://www.consumernews.co.kr/rss/allArticle.xml",
-"https://www.ekn.kr/rss/allArticle.xml",
-"https://www.paxnet.co.kr/rss/main.xml",
-"https://www.hankyung.com/it/feed",                           # 한국경제 종합
-"https://www.hankyung.com/economy/feed",
-"https://www.enewstoday.co.kr/rss/allArticle.xml",            # 이뉴스투데이(전체)
-"http://biz.chosun.com/site/data/rss/rss.xml",                # 조선비즈(전체)
-"https://biz.chosun.com/rss/chosunbiz.xml",                   # 조선비즈
-"https://www.sedaily.com/NewsList/GB01",                      # 서울경제 (메인 RSS)
-"https://news.mt.co.kr/mtview/rss",                           # 머니투데이
-"https://news.nate.com/rss/news.xml",                         # 네이트뉴스
-"https://www.zdnet.co.kr/news/news_xml.html",                 # ZDNet Korea
-"https://www.ddaily.co.kr/rss/allArticle.xml",                # 디지털데일리
-"https://www.khan.co.kr/rss/rssdata/kh_news.xml",             # 경향신문(전체)
-"https://www.asiae.co.kr/news/rss/asia_rss.htm",
-"https://rss.etnews.com/Section902.xml",                      # 전자신문(뉴스속보)
-"https://rss.etnews.com/Section901.xml",                      # 전자신문(오늘의 뉴스)
-"https://rss.etnews.com/Section903.xml",                      # 전자신문(인기기사)
-"https://rss.etnews.com/Section904.xml",                      # 전자신문(추천기사)
-"http://rss.etnews.co.kr/Section062.xml",                     # 전자신문(에너지 신성장)
-"http://rss.etnews.co.kr/Section023.xml",                     # 전자신문(전국뉴스)
-"https://rss.fnnews.com/rss/new/fn_realnews_all.xml",         # 파이낸셜뉴스(종합)
-"https://rss.edaily.co.kr/edaily_news.xml",                   # 이데일리(전체)
-"http://news.mk.co.kr/rss/headline.xml",                      # 매일경제(헤드라인)
-"http://news.mk.co.kr/rss/today_topic.xml",                   # 매일경제(이슈)
-"https://file.mk.co.kr/news/rss/rss_30100041.xml",            # 매경(경제)
-"https://file.mk.co.kr/news/rss/rss_30200030.xml",            # 매경(정치)
-"https://file.mk.co.kr/news/rss/rss_30300018.xml",            # 매경(국제)
-"https://file.mk.co.kr/news/rss/rss_30000023.xml",            # 매경(연예/문화)
-"https://file.mk.co.kr/news/rss/rss_50200011.xml",            # 매경(증권)
-"https://file.mk.co.kr/news/rss/rss_50300009.xml",            # 매경(부동산)
-"https://file.mk.co.kr/news/rss/rss_71000001.xml",            # 매경(스포츠)
-"https://www.newsis.com/RSS/sokbo.xml",                       # 뉴시스 속보
-"https://www.newsis.com/RSS/politics.xml",                    # 뉴시스 정치
-"https://www.newsis.com/RSS/international.xml",               # 뉴시스 국제
-"https://www.newsis.com/RSS/economy.xml",                     # 뉴시스 경제
-"https://www.newsis.com/RSS/bank.xml",                        # 뉴시스 금융
-"https://www.newsis.com/RSS/industry.xml",                    # 뉴시스 산업
-"https://www.newsis.com/RSS/society.xml",                     # 뉴시스 사회
-"https://www.newsis.com/RSS/health.xml",                      # 뉴시스 바이오-IT
-"https://www.newsis.com/RSS/met.xml",                         # 뉴시스 수도권
-"https://www.newsis.com/RSS/country.xml",                     # 뉴시스 지방
-"https://www.fnnews.com/rss/new/fn_realnews_stock.xml",       # 파이낸셜뉴스(증권)
-"https://www.fnnews.com/rss/new/fn_realnews_finance.xml",     # 파이낸셜뉴스(금융)
+    "https://www.khan.co.kr/rss/rssdata/total_news.xml",           # 경향신문
+    "http://rss.newspim.com/news/category/1",                      # 뉴스핌(전체)
+    "https://rss.dt.co.kr/Section901.xml",                         # 디지털타임즈(전체)
+    "https://www.venturesquare.net/feed",                          # 벤처스퀘어(전체)
+    "https://www.news1.kr/articles/rss/",                          # 뉴스1(전체)
+    "https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
+    "https://www.newsis.com/pct/rss.xml",                          # 뉴시스(전체)
+    "http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
+    "http://rss.donga.com/total.xml",                              # 동아일보(전체)
+    "http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
+    "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", # 조선닷컴(전체)
+    "http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
+    "http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
+    "http://rss.mt.co.kr/mt_news.xml",                             # 머니투데이(최신기사)
+    "http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
+    "http://media.daum.net/rss/today/primary/all/rss2.xml",        # 다움(종합)
+    "http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
+    "http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
+    "http://www.segye.com/Articles/RSSList/segye_recent.xml",      # 세계일보(전체)
+    "http://rss.segye.com/segye_recent.xml",                       # 세계일보(최신기사)
+    "http://rss.segye.com/segye_total.xml",                        # 세계일보(종합)
+    "http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
+    "http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
+    "http://rss.ohmynews.com/rss/top.xml",                         # 오마이뉴스(주요기사)
+    "http://www.mediatoday.co.kr/rss/allArticle.xml",              # 미디어오늘(전체)
+    "http://www.zdnet.co.kr/services/rss/all/EUC/ZDNetKorea_News.asp", # 지디넷코리아(전체)
+    "http://www.todaykorea.co.kr/rss/allArticle.xml",              # 투데이코리아(전체)
+    "http://www.fnnews.com/rss/fn_realnews_all.xml",               # 파이낸셜뉴스(전체)
+    "http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
+    "http://www.ekgib.com/rss/allArticle.xml",                     # 경기일보(전체)
+    "http://www.imaeil.com/rss/content/article01.xml",             # 매일신문(전체)
+    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02&plink=RSSREADER",    # SBS경제
+    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=07&plink=RSSREADER",    # SBS국제/글로벌
+    "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",                   # SBS주요뉴스
+    "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER",    # SBS정치
+    "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",              # SBS뉴스속보
+    "https://news.sbs.co.kr/news/Special_RssFeed.do?plink=RSSREADER",               # SBS취재파일
+    "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
+    "http://rss.nocutnews.co.kr/nocutnews.xml",                   # 노컷뉴스전체
+    "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
+    "http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
+    "http://www.newsis.com/RSS/sokbo.xml",                        # 뉴시스속보
+    "https://www.korea.kr/rss/reporter.xml",                      # 정책기자마당
+    "https://www.korea.kr/rss/policy.xml",                        # 정책정보전체
+    "https://www.korea.kr/rss/cabinet.xml",                       # 국무회의브리핑
+    "https://www.korea.kr/rss/president.xml",                     # 대통령실브리핑
+    "https://www.korea.kr/rss/pressrelease.xml",                  # 정부보도자료
+    "https://www.korea.kr/rss/ebriefing.xml",                     # 정부브리핑
+    "https://www.korea.kr/rss/fact.xml",                          # 사실은이렇습니다
+    "https://www.korea.kr/rss/speech.xml",                        # 정부연설문
+    "https://www.korea.kr/rss/expdoc.xml",                        # 정책전문자료
+    "http://www.datanet.co.kr/rss/S1N1.xml",                      # 데이터넷뉴스
+    "https://www.ddanzi.com/rss",                                 # 딴지일보전체
+    "https://www.labortoday.co.kr/rss/allArticle.xml",            # 매일노동뉴스전체기사
+    "https://www.mediatoday.co.kr/rss/allArticle.xml",            # 미디어오늘전체기사
+    "https://www.businesspost.co.kr/rss/Article.xml",             # 비지니스포스트전체기사
+    "https://www.seoul.co.kr/xml/rss/rss_economy.xml",             # 서울신문경제
+    "https://www.seoul.co.kr/xml/rss/rss_international.xml",      # 서울신문국제
+    "https://www.seoul.co.kr/xml/rss/rss_society.xml",            # 서울신문사회
+    "https://www.seoul.co.kr/xml/rss/rss_politics.xml",           # 서울신문정치
+    "http://www.segyefn.com/views/rss/all_recent.xml",             # 세계파이낸스전체뉴스
+    "http://rss.mt.co.kr/st_news.xml",                            # 스타뉴스최신기사
+    "https://www.sisain.co.kr/rss/allArticle.xml",                 # 시사IN전체기사
+    "http://www.sisajournal.com/rss/allArticle.xml",               # 시사저널전체기사
+    "http://www.evernews.co.kr/rss/allArticle.xml",                # 에버뉴스전체기사
+    "https://www.ablenews.co.kr/rss/allArticle.xml",               # 에이블뉴스전체기사
+    "http://www.womennews.co.kr/rss/allArticle.xml",               # 여성신문전체기사
+    "https://www.yna.co.kr/rss/economy.xml",                       # 연합뉴스경제
+    "https://www.yna.co.kr/rss/northkorea.xml",                    # 연합뉴스북한
+    "https://www.yna.co.kr/rss/international.xml",                 # 연합뉴스세계
+    "https://www.yna.co.kr/rss/local.xml",                         # 연합뉴스전국
+    "https://www.yna.co.kr/rss/politics.xml",                      # 연합뉴스정치
+    "https://www.yna.co.kr/rss/news.xml",                          # 연합뉴스최신기사
+    "https://www.yna.co.kr/rss/industry.xml",                      # 연합뉴스산업
+    "http://rss.ohmynews.com/rss/ohmynews.xml",                    # 오마이뉴스전체기사
+    "https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이전체기사
+    "http://www.focuscolorado.net/rss/allArticle.xml",             # 주간포커스전체기사
+    "https://cdn.newscj.com/rss/gns_allArticle.xml",               # 천지일보전체기사
+    "http://www.cstimes.com/rss/allArticle.xml",                   # 컨슈머타임스전체기사
+    "http://www.top-rider.com/rss/allArticle.xml",                 # 탑라이더전체기사
+    "https://www.tongilnews.com/rss/allArticle.xml",               # 통일뉴스전체기사
+    "http://www.efnews.co.kr/rss/allArticle.xml",                  # 파이낸셜신문전체기사
+    "https://www.pressian.com/api/v3/site/rss/news",              # 프레시안최신기사
+    "https://www.hanion.co.kr/rss/allArticle.xml",                # 한겨레온전체기사
+    "https://www.hankyung.com/feed/all-news",                     # 한국경제(전체)
+    "https://news-ex.jtbc.co.kr/v1/get/rss/section/20",           # JTBC경제
+    "https://news-ex.jtbc.co.kr/v1/get/rss/section/40",           # JTBC국제
+    "https://news-ex.jtbc.co.kr/v1/get/rss/section/80",           # JTBC날씨
+    "https://news-ex.jtbc.co.kr/v1/get/rss/section/30",           # JTBC사회
+    "https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",            # JTBC속보
+    "https://news-ex.jtbc.co.kr/v1/get/rss/issue",                # JTBC이슈
+    "https://news-ex.jtbc.co.kr/v1/get/rss/section/10"            # JTBC정치
 ]
 
 def fetch_and_filter_news():
