@@ -97,6 +97,7 @@ news_sites = [
 "https://www.mk.co.kr/rss/40300001/",                          # 매일경제(전체)
 "http://rss.moneytoday.co.kr/mt_news.xml",                     # 머니투데이(전체)
 "https://www.mbn.co.kr/rss/",                                  # MBN매일방송(전체)
+"https://www.nextdaily.co.kr/rss/allArticle.xml",              # 넥스트데일리
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
 "https://www.yna.co.kr/pg/rss",
@@ -118,6 +119,8 @@ news_sites = [
 "https://www.paxnet.co.kr/rss/main.xml",
 "https://www.hankyung.com/it/feed",                           # 한국경제 종합
 "https://www.hankyung.com/economy/feed",
+"https://www.enewstoday.co.kr/rss/allArticle.xml",            # 이뉴스투데이(전체)
+"http://biz.chosun.com/site/data/rss/rss.xml",                # 조선비즈(전체)
 "https://biz.chosun.com/rss/chosunbiz.xml",                   # 조선비즈
 "https://www.sedaily.com/NewsList/GB01",                      # 서울경제 (메인 RSS)
 "https://news.mt.co.kr/mtview/rss",                           # 머니투데이
