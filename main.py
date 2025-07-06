@@ -87,8 +87,44 @@ news_sites = [
 "https://www.news1.kr/articles/rss/",                          # 뉴스1(전체)
 "https://www.newstomato.com/rss/all.xml",                      # 뉴스토마토(전체)
 "https://www.newsis.com/pct/rss.xml",                          # 뉴시스(전체)
+"http://www.kukinews.com/rss/kmibRssAll.xml",                  # 국민일보(전체)
+"http://rss.donga.com/total.xml",                              # 동아일보(전체)
+"http://www.chosun.com/site/data/rss/rss.xml",                 # 조선닷컴(전체)
+"https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", #조선닷컴(전체)
+"http://www.inews24.com/rss/rss_inews.xml",                    # 아이뉴스24(전체)
+"http://www.hani.co.kr/rss/",                                  # 한겨레(전체)
+"http://rss.mt.co.kr/mt_news.xml",                             # 머니투데이(최신기사)
+"http://biz.heraldm.com/rss/010000000000.xml",                 # 헤럴드경제(전체)
+"http://media.daum.net/rss/today/primary/all/rss2.xml",        # 다움(종합)
+"http://media.paran.com/rss/rss.kth?view=10",                  # 파란뉴스(인기)
+"http://media.paran.com/rss/rss.kth?view=1",                   # 파란뉴스(주요뉴스)
+"http://rss.segye.com/segye_recent.xml",                       # 세계일보(최신기사)
+"http://rss.segye.com/segye_total.xml",                        # 세계일보(종합)
+"http://rss.viewsnnews.com/total.xml",                         # 뷰스앤뉴스(전체)
+"http://rss.joins.com/joins_news_list.xml",                    # 중앙일보(전체)
+"http://rss.ohmynews.com/rss/top.xml",                         # 오마이뉴스(주요기사)
+"http://www.mediatoday.co.kr/rss/allArticle.xml",              # 미디어오늘(전체)
+"http://www.zdnet.co.kr/services/rss/all/EUC/ZDNetKorea_News.asp", #지디넷코리아(전체)
+"http://www.todaykorea.co.kr/rss/allArticle.xml",              # 투데이코리아(전체)
+"http://www.fnnews.com/rss/fn_realnews_all.xml",               # 파이낸셜뉴스(전체)
+"http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
+"http://www.ekgib.com/rss/allArticle.xml",                     # 경기일보(전체)
+"http://www.imaeil.com/rss/content/article01.xml",             # 매일신문(전체)
+"https://www.hankyung.com/feed/all-news",                      # 한국경제(전체)
+"https://news-ex.jtbc.co.kr/v1/get/rss/section/20",            # JTBC경제
+"https://news-ex.jtbc.co.kr/v1/get/rss/section/40",            # JTBC국제
+"https://news-ex.jtbc.co.kr/v1/get/rss/section/80",            # JTBC날씨
+"https://news-ex.jtbc.co.kr/v1/get/rss/section/30",            # JTBC사회
+"https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",             # JTBC속보
+"https://news-ex.jtbc.co.kr/v1/get/rss/issue",                 # JTBC이슈
+"https://news-ex.jtbc.co.kr/v1/get/rss/section/10",            # JTBC정치
 "https://rss.etnews.com/ETnews.xml",
-"https://www.hankyung.com/feed",
+"http://rss.hankyung.com/economy.xml",                         # 한경닷컴(경제 금융)
+"http://rss.hankyung.com/stock.xml",                           # 한경닷컴(증권)
+"http://rss.hankyung.com/industry.xml",                        # 한경닷컴(산업)
+"http://rss.hankyung.com/intl.xml",                            # 한경닷컴(국제뉴스)
+"http://rss.hankyung.com/politics.xml",                        # 한경닷컴(정치 사회)
+"http://rss.hankyung.com/xfile.xml",                           # 한경닷컴(취재기사)
 "https://www.edaily.co.kr/rss/news.xml",
 "https://rss.etoday.co.kr/eto/etoday_news_all.xml",            # 이투데이(전체)
 "https://www.infostockdaily.co.kr/rss/allArticle.xml",         # 인포스탁
@@ -101,11 +137,11 @@ news_sites = [
 "https://www.fntimes.com/rss/allArticle.xml",
 "https://rss.mt.co.kr/rss/mt.xml",
 "https://www.yna.co.kr/pg/rss",
-"https://www.yna.co.kr/section/rss/all.xml",                   # 연합뉴스(전체)
 "https://www.asiatoday.co.kr/rss/rss.xml",                     # 아시아투데이
 "https://www.seoul.co.kr/xml/rss/rss_top.xml",                 # 서울신문
 "http://news.kbs.co.kr/rss/rss.xml",                           # KBS
 "https://www.ytn.co.kr/_ln/0101.xml",                          # YTN
+"http://imnews.imbc.com/rss/news/news_00.xml",                 # MBC(전체)
 "https://rss.mk.co.kr",
 "https://www.tokenpost.kr/rss",                                # 토큰포스트
 "https://www.seoulfn.com/rss/allArticle.xml",
@@ -113,7 +149,6 @@ news_sites = [
 "https://www.kbiznews.co.kr/rss/allArticle.xml",
 "https://www.itooza.com/rss/today.xml",
 "http://www.kukinews.com/rss/kukiRssAll.xml",                 # 쿠키뉴스(전체)
-"https://www.kukinews.com/rss/allArticle.xml",
 "https://www.consumernews.co.kr/rss/allArticle.xml",
 "https://www.ekn.kr/rss/allArticle.xml",
 "https://www.paxnet.co.kr/rss/main.xml",
@@ -133,8 +168,12 @@ news_sites = [
 "https://rss.etnews.com/Section901.xml",                      # 전자신문(오늘의 뉴스)
 "https://rss.etnews.com/Section903.xml",                      # 전자신문(인기기사)
 "https://rss.etnews.com/Section904.xml",                      # 전자신문(추천기사)
+"http://rss.etnews.co.kr/Section062.xml",                     # 전자신문(에너지 신성장)
+"http://rss.etnews.co.kr/Section023.xml",                     # 전자신문(전국뉴스)
 "https://rss.fnnews.com/rss/new/fn_realnews_all.xml",         # 파이낸셜뉴스(종합)
 "https://rss.edaily.co.kr/edaily_news.xml",                   # 이데일리(전체)
+"http://news.mk.co.kr/rss/headline.xml",                      # 매일경제(헤드라인)
+"http://news.mk.co.kr/rss/today_topic.xml",                   # 매일경제(이슈)
 "https://file.mk.co.kr/news/rss/rss_30100041.xml",            # 매경(경제)
 "https://file.mk.co.kr/news/rss/rss_30200030.xml",            # 매경(정치)
 "https://file.mk.co.kr/news/rss/rss_30300018.xml",            # 매경(국제)
