@@ -310,4 +310,4 @@ if __name__ == "__main__":
     load_sent_titles()
     while True:
         fetch_and_filter_news()
-        time.sleep(5)
+        time.sleep(30)
