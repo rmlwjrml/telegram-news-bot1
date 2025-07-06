@@ -105,8 +105,8 @@ news_sites = [
     "http://www.kyeongin.com/rss/allArticle.xml",                  # 경인일보(전체)
     "http://www.ekgib.com/rss/allArticle.xml",                     # 경기일보(전체)
     "http://www.imaeil.com/rss/content/article01.xml",             # 매일신문(전체)
-    "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",                   # SBS주요뉴스
-    "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",              # SBS뉴스속보
+    "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",   # SBS주요뉴스
+    "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",  # SBS뉴스속보
     "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
     "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
     "http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
@@ -142,7 +142,6 @@ news_sites = [
     "http://www.top-rider.com/rss/allArticle.xml",                 # 탑라이더전체기사
     "https://www.tongilnews.com/rss/allArticle.xml",               # 통일뉴스전체기사
     "http://www.efnews.co.kr/rss/allArticle.xml",                  # 파이낸셜신문전체기사
-    "https://www.pressian.com/api/v3/site/rss/news",              # 프레시안최신기사
     "https://www.hanion.co.kr/rss/allArticle.xml",                # 한겨레온전체기사
     "https://www.hankyung.com/feed/all-news",                     # 한국경제(전체)
     "https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",            # JTBC속보
