@@ -80,6 +80,7 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 # RSS 뉴스 사이트 목록 (생략 가능)
 news_sites = [
     "https://www.asiae.co.kr/rss/all.xml",                     # 아시아경제
+"https://www.khan.co.kr/rss/rssdata/total_news.xml".           # 경향신문
 "http://rss.newspim.com/news/category/1",                      # 뉴스핌
 "https://rss.etnews.com/ETnews.xml", 
 "https://www.hankyung.com/feed",
@@ -128,6 +129,16 @@ news_sites = [
 "https://file.mk.co.kr/news/rss/rss_50200011.xml",            # 매경(증권)
 "https://file.mk.co.kr/news/rss/rss_50300009.xml",            # 매경(부동산)
 "https://file.mk.co.kr/news/rss/rss_71000001.xml",            # 매경(스포츠)
+"https://www.newsis.com/RSS/sokbo.xml"                        # 뉴시스 속보
+"https://www.newsis.com/RSS/politics.xml",                    # 뉴시스 정치
+"https://www.newsis.com/RSS/international.xml",               # 뉴시스 국제
+"https://www.newsis.com/RSS/economy.xml",                     # 뉴시스 경제
+"https://www.newsis.com/RSS/bank.xml",                        # 뉴시스 금융
+"https://www.newsis.com/RSS/industry.xml",                    # 뉴시스 산업
+"https://www.newsis.com/RSS/society.xml",                     # 뉴시스 사회
+"https://www.newsis.com/RSS/health.xml",                      # 뉴시스 바이오-IT
+"https://www.newsis.com/RSS/met.xml",                         # 뉴시스 수도권
+"https://www.newsis.com/RSS/country.xml",                     # 뉴시스 지방
 "https://www.fnnews.com/rss/new/fn_realnews_stock.xml",       # 파이낸셜뉴스(증권)
 "https://www.fnnews.com/rss/new/fn_realnews_finance.xml",     # 파이낸셜뉴스(금융)
 ]
