@@ -111,7 +111,6 @@ news_sites = [
     "https://news.sbs.co.kr/news/TopicRssFeed.do?plink=RSSREADER",                   # SBS주요뉴스
     "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",              # SBS뉴스속보
     "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",              # 국민일보전체기사
-    "http://rss.nocutnews.co.kr/nocutnews.xml",                   # 노컷뉴스전체
     "http://www.newsdaily.kr/rss/allArticle.xml",                 # 뉴스데일리전체
     "http://www.newspost.kr/rss/allArticle.xml",                  # 뉴스포스트전체
     "http://www.newsis.com/RSS/sokbo.xml",                        # 뉴시스속보
