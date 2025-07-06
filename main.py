@@ -87,6 +87,11 @@ news_sites = [
     "https://www.yonhapnewstv.co.kr/browse/feed/",
     "https://www.mk.co.kr/rss/30000001/",
     "https://www.fntimes.com/rss/allArticle.xml",
+    "https://rss.mt.co.kr/rss/mt.xml",
+    "https://www.yna.co.kr/pg/rss",
+    "https://www.asiatoday.co.kr/rss/rss.xml",
+    "https://rss.mk.co.kr",
+    "https://www.tokenpost.kr/rss",
 ]
 
 def fetch_and_filter_news():
