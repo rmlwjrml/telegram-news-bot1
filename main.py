@@ -79,31 +79,61 @@ keywords = [ "2차전지", "韓", "中", "배터리", "4인뱅", "저출산", "�
 
 # RSS 뉴스 사이트 목록 (생략 가능)
 news_sites = [
-"http://rss.donga.com/total.xml", # 동아일보(전체)
-"http://www.hani.co.kr/rss/",     # 한겨레(전체)
-"http://www.khan.co.kr/rss/rssdata/total_news.xml",   # 경향신문(전체)
-"http://rss.segye.com/segye_recent.xml",    # 세계일보(전체)
+"https://rss.donga.com/politics.xml",  # 동아일보(정치)
+"https://rss.donga.com/national.xml",  # 동아일보(사회)
+"https://rss.donga.com/economy.xml",   # 동아일보(경제)
+"https://rss.donga.com/science.xml",   # 동아일보(의학과학)
+"https://www.hani.co.kr/rss/politics/",   # 한겨레(정치)
+"https://www.hani.co.kr/rss/economy/",    # 한겨레(경제)
+"https://www.hani.co.kr/rss/society/",    # 한겨레(사회)
+"https://www.hani.co.kr/rss/science/",    # 한겨레(과학)
+"https://www.khan.co.kr/rss/rssdata/politic_news.xml",   # 경향신문(정치)
+"https://www.khan.co.kr/rss/rssdata/economy_news.xml",   # 경향신문(경제)
+"https://www.khan.co.kr/rss/rssdata/society_news.xml",   # 경향신문(사회)
+"https://www.khan.co.kr/rss/rssdata/science_news.xml",   # 경향신문(과학환경)
+"https://www.segye.com/Articles/RSSList/segye_politic.xml",   # 세계일보(정치)
+"https://www.segye.com/Articles/RSSList/segye_economy.xml",   # 세계일보(경제)
+"https://www.segye.com/Articles/RSSList/segye_society.xml",   # 세계일보(사회)
+"https://www.segyefn.com/views/rss/finance.xml",              # 세계파이낸스(금융)
+"https://www.segyefn.com/views/rss/industry.xml",             # 세계파이낸스(산업)
+"https://www.segyefn.com/views/rss/stock.xml",                # 세계파이낸스(증권)
 "http://rss.nocutnews.co.kr/nocutnews.xml",   # 노컷뉴스(전체)
-"http://rss.ohmynews.com/rss/ohmynews.xml",   # 오마이뉴스(전체)
-"http://www.mediatoday.co.kr/rss/allArticle.xml",   # 미디어오늘(전체)
+"",
+"https://rss.ohmynews.com/rss/society.xml",   # 오마이뉴스(사회)
+"https://rss.ohmynews.com/rss/politics.xml",  # 오마이뉴스(정치)
+"https://rss.ohmynews.com/rss/economy.xml",   # 오마이뉴스(경제)
+"https://rss.ohmynews.com/rss/education.xml", # 오마이뉴스(교육)
+"https://www.mediatoday.co.kr/rss/S1N2.xml",        # 미디어오늘(정치)
+"https://www.mediatoday.co.kr/rss/S1N3.xml",        # 미디어오늘(경제)
+"https://www.mediatoday.co.kr/rss/S1N4.xml",        # 미디어오늘(사회)
+"https://www.mediatoday.co.kr/rss/S1N7.xml",        # 미디어오늘(IT과학)
+"https://www.mediatoday.co.kr/rss/S1N6.xml",        # 미디어오늘(세계)
 "http://rss.edaily.co.kr/edaily_news.xml",   # 이데일리(전체)
+"",
 "http://www.fnnews.com/rss/new/fn_realnews_all.xml",   # 파이낸셜뉴스(전체)
-"https://www.yna.co.kr/rss/news.xml",   # 연합뉴스(최신)
+"",
+"https://www.yna.co.kr/rss/politics.xml",   # 연합뉴스(정치)
+"https://www.yna.co.kr/rss/economy.xml",    # 연합뉴스(경제)
+"https://www.yna.co.kr/rss/industry.xml",   # 연합뉴스(산업)
+"https://www.yna.co.kr/rss/international.xml",   # 연합뉴스(세계)
 "http://www.yonhapnewstv.co.kr/browse/feed/",   # 연합뉴스TV(최신)
+
 "https://www.yonhapnewseconomytv.com/rss/allArticle.xml",  # 연합뉴스경제tv(전체)
 "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",   # SBS(최신)
 "http://www.bosa.co.kr/rss/allArticle.xml",      # 의학신문(전체)
 "https://www.hankyung.com/feed/all-news",    # 한국경제(전체)
-"https://www.newsis.com/RSS/sokbo.xml",                       # 뉴시스 속보
 "https://www.newsis.com/RSS/politics.xml",                    # 뉴시스 정치
-"https://www.newsis.com/RSS/international.xml",               # 뉴시스 국제
 "https://www.newsis.com/RSS/economy.xml",                     # 뉴시스 경제
 "https://www.newsis.com/RSS/bank.xml",                        # 뉴시스 금융
 "https://www.newsis.com/RSS/industry.xml",                    # 뉴시스 산업
 "https://www.newsis.com/RSS/society.xml",                     # 뉴시스 사회
 "https://www.newsis.com/RSS/health.xml",                      # 뉴시스 바이오-IT
 "www.asiae.co.kr/rss/all.htm",   # 아시아경제(전체)
-"https://rss.etoday.co.kr/eto/etoday_news_all.xml",    # 이투데이(전체)
+"https://rss.etoday.co.kr/eto/finance_news.xml",       # 이투데이(증권금융)
+"https://rss.etoday.co.kr/eto/company_news.xml",       # 이투데이(기업뉴스)
+"https://rss.etoday.co.kr/eto/global_news.xml",        # 이투데이(글로벌경제)
+"https://rss.etoday.co.kr/eto/political_economic_news.xml",   # 이투데이(정치경제)
+"https://rss.etoday.co.kr/eto/social_news.xml",        # 이투데이(사회)
 "https://www.newswire.co.kr/rss?md=A31",     # 뉴스와이어(전체)
 "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",     # 국민일보(전체)
 "http://rss.moneytoday.co.kr/mt_news.xml",    # 머니투데이(전체)
